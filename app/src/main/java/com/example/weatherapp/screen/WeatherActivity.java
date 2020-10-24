@@ -43,7 +43,7 @@ public class WeatherActivity extends AppCompatActivity implements WeatherView {
 
     @Override
     public void showdata(WeatherResponce weatherResponce) {
-        T_City_temp1.setText(String.valueOf(weatherResponce.getTemperature()));
+        T_City_temp1.setText(String.valueOf(weatherResponce.getTemperature() +"C"));
         T_City_name.setText(weatherResponce.getName());
         T_City_temp.setText(String.valueOf(weatherResponce.getTemperature()));
         T_City_description.setText(weatherResponce.getWeatherdescription());
