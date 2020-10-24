@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    tools:context=".screen.WeatherActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:text="Minsk"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="90dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/city_temperature"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="20 C"
+            android:textSize="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sun">
+                ">
+            </ImageView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_marginLeft="25dp"
+            android:text="Main">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_marginLeft="100dp"
+            android:text="sdfsdf"
+            android:id="@+id/main">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="25dp"
+            android:text="Temp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_marginTop="40dp"
+            android:text="sdfsdsdf"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/temp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="10dp"
+            android:text="Descript">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_marginTop="80dp"
+            android:text="sdfsdsdf"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/description">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="230dp"
+            android:text="Pressue">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="320dp"
+            android:textSize="19dp"
+            android:text="sdfsdf"
+            android:id="@+id/pressue">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="230dp"
+            android:text="Visability">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_marginTop="40dp"
+            android:text="sdfsdsdf"
+            android:layout_marginLeft="320dp"
+            android:id="@+id/visability">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="230dp"
+            android:text="Himidity">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:layout_marginTop="80dp"
+            android:text="sdfsdsdf"
+            android:layout_marginLeft="320dp"
+            android:id="@+id/humidity">
+        </TextView>
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+    
+
+</LinearLayout>
+
