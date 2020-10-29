@@ -6,5 +6,11 @@
         android:id="@+id/actionCustomize"
         android:title="@string/customize"
         app:showAsAction="never" />
-
+    <item
+        android:id="@+id/actionSearch"
+        android:icon="@drawable/ic_action_name"
+        android:title=""
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView">
+    </item>
 </menu>

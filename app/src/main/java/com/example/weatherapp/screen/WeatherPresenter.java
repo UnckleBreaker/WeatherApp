@@ -24,7 +24,7 @@ public class WeatherPresenter extends AppCompatActivity {
         weatherUseCase.getWeather()
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(i-> {weatherView.showdata(i); Log.d(TAG, i.getName() );  }, throwable -> {weatherView.showError(throwable.getMessage()); Log.d(TAG, throwable.getMessage() );
+                .subscribe(i-> {weatherView.showdata(i); Log.d(TAG, i.getName() );  }, throwable -> {weatherView.showError(throwable.getMessage()); Log.d(TAG, "thw "+throwable.getMessage() );
 
                 });
     }

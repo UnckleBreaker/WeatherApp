@@ -5,11 +5,9 @@ import com.example.weatherapp.domain.WeatherProvider;
 public class DataProvider {
     static WeatherProvider weatherProvider;
 
-    public static WeatherProvider getWeatherProvider()
+    public static WeatherProvider getWeatherProvider(String city)
     {
-        if(weatherProvider ==null){
-            weatherProvider =new DataReposetory();
-        }
+            weatherProvider =new DataReposetory(city);
         return weatherProvider;
     }
     public static void setWeatherProvider(WeatherProvider sweatherProvider)

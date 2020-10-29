@@ -10,12 +10,17 @@ import io.reactivex.Observable;
 
 public class DataReposetory implements WeatherProvider {
 
+    public String city;
+
+    public DataReposetory(String city) {
+        this.city = city;
+    }
 
     @Override
-    public Observable<WeatherResponce> getWeatherResponce() {
+public Observable<WeatherResponce> getWeatherResponce() {
         return ApiFactory.getWeatherApi()
-                .getWeather()
-             //   .compose(new WeatherCacheTransformer())
-                .map(new WeatherMapper());
-    }
-}
+        .getWeather(city)
+        //   .compose(new WeatherCacheTransformer())
+        .map(new WeatherMapper());
+        }
+        }

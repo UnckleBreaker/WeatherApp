@@ -8,7 +8,6 @@
     android:background="#3D86FC"
     android:orientation="horizontal"
     tools:context=".screen.pageindicatorview.home.HomeActivity">
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         style="@style/BaseToolbar"
@@ -16,6 +15,7 @@
         android:layout_height="?actionBarSize"
         app:title="@string/home"
         app:titleTextAppearance="@style/ToolbarTextAppearance" />
+
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
